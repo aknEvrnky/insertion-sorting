@@ -7,10 +7,8 @@
 
 
 class Sort {
-    class Sortable {
-    public:
-        int static Insertion(int[], int);
-    };
+public:
+    int static Insertion(int[], int);
 };
 
 

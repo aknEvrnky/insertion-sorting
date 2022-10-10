@@ -6,7 +6,7 @@
 #include <chrono>
 using namespace std::chrono;
 
-int Sort::Sortable::Insertion(int arr[], int n) {
+int Sort::Insertion(int arr[], int n) {
     // start timer
     auto start = high_resolution_clock::now();
 
@@ -27,5 +27,5 @@ int Sort::Sortable::Insertion(int arr[], int n) {
     auto stop = high_resolution_clock::now();
 
     // return the duration as microseconds
-    return (duration_cast<microseconds>(stop - start)).count();
+    return (duration_cast<milliseconds>(stop - start)).count();
 }
