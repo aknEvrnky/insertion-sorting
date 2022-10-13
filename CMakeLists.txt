@@ -3,4 +3,4 @@ project(Sorting)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Sorting main.cpp Sort.cpp Sort.h)
+add_executable(Sorting main.cpp Sort.cpp Sort.h Grapher.cpp Grapher.h)

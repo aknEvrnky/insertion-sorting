@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Sort.h"
+#include <string>
+#include "Grapher.h"
 
 int getRandomNumber(int min, int max) {
     return rand() % (max - min + 1) + min;
@@ -27,10 +29,23 @@ int main() {
         }
     }
 
+    int *results = new int[nSize];
+
     for(int i = 0; i < nSize; i++) {
         int actualSize = nValue * (i + 1);
         int duration = Sort::Insertion(arr[i], actualSize);
         std::cout << "duration for n = "<< i+1 <<": " << duration << "ms" << std::endl;
+        results[i] = duration;
     }
+    std::string output = Grapher::draw(results, nSize);
+
+    std::cout << output << std::endl;
+
+    // free the memory
+    for (int i = 0; i < nSize; i++) {
+        delete [] arr[i];
+    }
+    delete [] results;
+
     return 0;
 }
