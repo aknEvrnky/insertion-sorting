@@ -13,7 +13,7 @@ it will sort 1000 values 4 times and calculate the average time.
 
 | step (n) | number of elements | average time |
 |----------|--------------------|--------------|
-| 1        | 10000              | 58 ms        |
+| 1        | 10000              | 38 ms        |
 | 2        | 20000              | 129 ms       |
 | 3        | 30000              | 285 ms       |
 | 4        | 40000              | 505 ms       |
