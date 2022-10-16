@@ -21,3 +21,8 @@ it will sort 1000 values 4 times and calculate the average time.
 ## build
 
 You can build the cmake file with CLion.
+
+## Example
+The below graph shows the average time to sort 100000.
+
+![plot](https://quickchart.io/chart/render/zm-dd5a5c95-6438-4387-beab-61e00ccccb45?data1=12,38,71,128,198,285,389,508,636,795,962,1146,1349,1566,1795,2042,2297,2578,2877,3187,&labels=n=1,n=2,n=3,n=4,n=5,n=6,n=7,n=8,n=9,n=10,n=11,n=12,n=13,n=14,n=15,n=16,n=17,n=18,n=19,n=20 "Title")
